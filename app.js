@@ -24,20 +24,6 @@ $(document).ready(function(){
 			
 	});
 
-function appendDom(employee){
-	$("#singleEmployee").append("<div class='employee'></div>");
-	
-	var $el = $("#singleEmployee").children().last();
-
-	$el.append("<p>" + 'First Name: ' + employee.employeeFirstName + "</p>");
-	$el.append("<p>" + 'Last Name: ' + employee.employeeLastName + "</p>");
-	$el.append("<p>" + 'ID#: ' + employee.employeeID + "</p>");
-	$el.append("<p>" + 'Job Title: ' + employee.employeeTitle + "</p>");
-	$el.append("<p>" + 'Salary: ' + employee.employeeSalary + "</p>");
-	$el.append("<button class='confirmButton'>Confirm</button>");
-	$el.append("<button class='cancelButton'>Cancel</button>");
-
-
 	$("#singleEmployee").on('click', '.confirmButton', function(){ 
 	$("#singleEmployee").empty();
 	console.log("Confirm has been pressed");
@@ -52,6 +38,22 @@ function appendDom(employee){
 	console.log(employeeArray);
 	return employeeArray;
 })
+
+function appendDom(employee){
+	$("#singleEmployee").append("<div class='employee'></div>");
+	
+	var $el = $("#singleEmployee").children().last();
+
+	$el.append("<p>" + 'First Name: ' + employee.employeeFirstName + "</p>");
+	$el.append("<p>" + 'Last Name: ' + employee.employeeLastName + "</p>");
+	$el.append("<p>" + 'ID#: ' + employee.employeeID + "</p>");
+	$el.append("<p>" + 'Job Title: ' + employee.employeeTitle + "</p>");
+	$el.append("<p>" + 'Salary: ' + employee.employeeSalary + "</p>");
+	$el.append("<button class='confirmButton'>Confirm</button>");
+	$el.append("<button class='cancelButton'>Cancel</button>");
+
+
+	
 
 };
 
@@ -68,6 +70,7 @@ function appendDom(employee){
 
 			for(i=0;i<totalSalaryArray.length;i++){
 				totalOfSalaries += totalSalaryArray[i];
+				totalOfSalaries = Math.round(totalOfSalaries / 12);
 			}
 
 			$('#calculatedSalaries').css({"opacity":"0", "display" : "block"}).show().animate({opacity:1});
