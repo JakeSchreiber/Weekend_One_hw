@@ -1,0 +1,173 @@
+body {
+	background-color: #377C99;
+}
+
+h1 {
+	margin: 0;
+	font-size: 24pt;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}
+
+#employeeContainer {
+	position: absolute;
+ 	padding: 10px;
+ 	left: 50%;
+ 	margin-left: -150px;
+	width: 265px;
+	background-color: #A8D1E6;
+	height: 390px;
+	margin-top: 50px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+}
+
+#employeeContainer label {
+	font-family: helvetica;
+	font-weight: bold;
+	color: white;
+	opacity: .65;
+	margin: 5px 0 0 5px;
+	display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+
+#employeeContainer input {
+	margin-left: 5px;
+	display: inline-block;
+	background-color: #D5EBF5;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 14pt;
+	color: #377C99;
+	padding-left: 5px;
+    float: left;
+    clear: left;
+    border: 0;
+    width: 245px;
+    text-align: left;
+}
+
+#employeeContainer input:hover{
+	background-color: white;
+}
+
+#employeeContainer input[type=submit] {
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	background-color: #377C99;
+	width: 252px;
+}
+
+#employeeContainer input[type=submit]:hover {
+	background-color: #2B5F75;
+}
+
+#singleEmployee {
+	display: none;
+	position: absolute;
+ 	padding: 10px;
+ 	left: 50%;
+ 	margin-left: -137.5px;
+	width: 240px;
+	background-color: white;
+	height: 125px;
+	margin-top: 65px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #2B5F75;
+	opacity: .9;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+#employeeContainer input[type=button] {
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	background-color: #1D4759;
+	width: 252px;
+}
+
+#employeeContainer input[type=button]:hover {
+	background-color: #2B5F75;
+}
+
+p{
+font-family: helvetica;
+	font-weight: bold;
+	color: black;
+	opacity: .65;
+	margin: 5px 0 0 5px;
+	line-height: 14px;
+	display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+
+.confirmButton{
+	background-color: #377C99;
+	color: white;
+	border: 0px;
+	margin-top: 15px;
+}
+
+.cancelButton{
+	background-color: #1D4759;
+	color: white;
+	border: 0px;
+	float: right;
+	margin-top: 15px;
+}
+
+#calculatedSalaries {
+	display: none;
+	position: absolute;
+ 	padding-top: 15px;
+ 	padding-right: 15px;
+ 	left: 50%;
+ 	margin-left: -137.5px;
+	width: 240px;
+	background-color: #1D4759;
+	height: 100px;
+	margin-top: 65px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+#calculatedSalaries p {
+	color: white;
+	text-align: center;
+}
+
+#calculatedSalaries p2 {
+	color: white;
+	font-size: 36pt;
+	text-align: center;
+	line-height: 36pt;
+}
+
+.closeButton{
+	background-color: #377C99;
+	color: white;
+	border: 0px;
+	margin-top: 0px;
+	float: right;
+}
+
+
+
+/*#employeeContainer input[type=text] {
+
+
+}
